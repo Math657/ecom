@@ -1,18 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+// import { BrowserRouter, Route, Router, Switch } from 'react-router-dom';
+// import Connect from './components/Connect/Connect'
+import Cart from './Cart/Cart'
+import Routes from '../routes'
+import Header from '../layout/Header'
+// import Header from './layout/Header'
+// import Signup from './components/Signup/Signup'
 
 function Index() {
     return (
-        <div className="container">
-            <div className="row justify-content-center">
-                <div className="col-md-8">
-                    <div className="card">
-                        <div className="card-header">Example Compone</div>
-
-                        <div className="card-body">I'm an example component!</div>
-                    </div>
-                </div>
-            </div>
+        <div>
+            <Cart />  
+            <Header />      
         </div>
     );
 }
