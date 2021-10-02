@@ -1,21 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import { BrowserRouter, Route, Router, Switch } from 'react-router-dom';
-// import Connect from './components/Connect/Connect'
-import Cart from './Cart/Cart'
-import Routes from '../routes'
 import Connect from '../components/Connect/Connect'
-import Home from '../components/Home/Home'
-
-import Header from '../layout/Header'
-import Footer from '../layout/Footer'
-// import Header from './layout/Header'
-// import Signup from './components/Signup/Signup'
+import Cart from '../components/Cart/Cart'
+// import { Home } from '../components/Home';
 // import { Switch, Route } from 'react-router-dom';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Header from '../layout/Header';
 
-function Index() {
-    return (
+export default function Routes() {
+
+//     var Router = require("react-router").Router;
+// var Route = require("react-router").Route;
+// var Switch = require("react-router").Switch;
+
+    return(
         <div>      
             <Router>
                 <div>
@@ -32,21 +30,9 @@ function Index() {
                                 <Cart />
                             </Route>
                         </Switch>
-                        <Switch>
-                            <Route path="/home">
-                                <Home />
-                            </Route>
-                        </Switch>
                     </div>
-                    <Footer />
                 </div>
             </Router>
         </div>
-    );
-}
-
-export default Index;
-
-if (document.getElementById('index')) {
-    ReactDOM.render(<Index />, document.getElementById('index'));
+    )
 }
