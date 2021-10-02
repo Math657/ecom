@@ -14,7 +14,7 @@ import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import { styled } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import PersonIcon from '@material-ui/icons/Person';
-// import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import Connect from '../components/Connect/Connect'
 import { Link } from "react-router-dom";
 import { BrowserRouter as Router } from 'react-router-dom';
@@ -110,12 +110,12 @@ HideOnScroll.propTypes = {
                     <Grid className={classes.gridRight} item xs={3}>                    
                       <Router >  
                         <Link to="/connect" className="item" className="router">
-                          {/* <h2><PersonIcon  className={classes.icon} /></h2> */}
+                          <h2><PersonIcon  className={classes.icon} /></h2>
                         </Link>                             
                       </Router>
                       <Router>  
                         <Link to="/cart" className="item" className={classes.routerDecoration}>
-                          {/* <h2><ShoppingCartIcon  className={classes.icon} /></h2> */}
+                          <h2><ShoppingCartIcon  className={classes.icon} /></h2>
                         </Link>                             
                       </Router>                        
                     </Grid>                  

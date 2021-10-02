@@ -21,6 +21,6 @@ import {
 
 export default function Cart() {
     return(
-        <Grid>HELLO</Grid>
+        <Grid>CART</Grid>
     )
 }
