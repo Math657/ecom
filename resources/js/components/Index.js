@@ -8,6 +8,7 @@ import Connect from '../components/Connect/Connect'
 import Home from '../components/Home/Home'
 
 import Header from '../layout/Header'
+import Footer from '../layout/Footer'
 // import Header from './layout/Header'
 // import Signup from './components/Signup/Signup'
 // import { Switch, Route } from 'react-router-dom';
@@ -37,6 +38,7 @@ function Index() {
                             </Route>
                         </Switch>
                     </div>
+                    <Footer />
                 </div>
             </Router>
         </div>
