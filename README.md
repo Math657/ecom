@@ -6,7 +6,7 @@ npm run dev
 
 npm install
 
-Modifier l'env pour la DB
+Créer un .env
 
 php artisan migrate
 
